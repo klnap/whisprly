@@ -1,0 +1,35 @@
+export const routes = {
+  urls: {
+    home: '/',
+    login: '/login',
+    register: '/register',
+    verifyEmail: '/verify-email',
+    verify: '/verify',
+    forgotPassword: '/forgot-password',
+    resetPassword: '/reset-password',
+    dashboard: '/dashboard',
+    profile: '/profile',
+    settings: '/settings',
+    admin: '/admin',
+    notFound: '/404',
+  },
+  api: {
+    auth: {
+      login: '/api/auth/login',
+      register: '/api/auth/register',
+      logout: '/api/auth/logout',
+      verifyEmail: '/api/auth/verify-email',
+      resendVerification: '/api/auth/resend-verification',
+      forgotPassword: '/api/auth/forgot-password',
+      resetPassword: '/api/auth/reset-password',
+      checkAuth: '/api/auth/check',
+    },
+    user: {
+      profile: '/api/user/profile',
+      updateProfile: '/api/user/profile/update',
+      changePassword: '/api/user/password/change',
+    },
+  },
+  protected: ['/dashboard', '/profile', '/settings', '/admin'],
+  public: ['/login', '/register', '/verify-email', '/forgot-password', '/reset-password'],
+} as const; 

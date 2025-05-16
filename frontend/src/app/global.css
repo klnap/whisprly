@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --font-general-sans: 'General Sans', sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-general-sans);
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+
